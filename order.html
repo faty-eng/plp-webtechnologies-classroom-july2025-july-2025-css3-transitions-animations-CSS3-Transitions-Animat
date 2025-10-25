@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Place Your Order | GreenPastures Organic Farm</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>🌿 GreenPastures Organic Farm</h1>
+    <p>Delivering Fresh milk, butter, beef, chiken and sheep Products Across the U.S.</p>
+  </header>
+
+  <main class="order-page">
+    <section class="order">
+      <h2>Place Your Order</h2>
+      <p>Fill out the form below to enjoy our fresh organic products delivered right to your door.</p>
+
+      <!-- Order Form Container -->
+      <div class="order-form active" id="orderForm">
+        <form id="customerForm" onsubmit="return submitOrder(event)">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" placeholder="John Doe" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+          <label for="address">Delivery Address:</label>
+          <input type="text" id="address" name="address" placeholder="123 Farm Road, Springfield, IL" required>
+
+          <label for="product">Select Product:</label>
+          <select id="product" name="product" required>
+            <option value="">-- Choose Product --</option>
+            <option value="milk">Organic Milk</option>
+            <option value="beef">Grass-Fed Beef</option>
+            <option value="sheep">Organic Sheep</option>
+          </select>
+
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity" name="quantity" min="1" required>
+
+          <button type="submit" class="submit-btn">Submit Order</button>
+        </form>
+
+        <!-- Animated Confirmation -->
+        <div class="confirmation" id="confirmation">
+          ✅ Order Sent! Thank you for choosing GreenPastures!
+        </div>
+      </div>
+    </section>
+
+    <!-- Optional back to homepage button -->
+    <div class="back-home">
+      <a href="index.html" class="order-btn">← Back to Home</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 GreenPastures Organic Farm | Pure. Natural. Delivered.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

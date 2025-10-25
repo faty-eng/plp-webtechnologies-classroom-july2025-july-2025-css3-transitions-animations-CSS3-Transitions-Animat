@@ -1,3 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GreenPastures Organic Farm</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>🌾 GreenPastures Organic Farm</h1>
+    <p>Fresh Milk, Organic Butter, Grass-Fed Beef, Healthy Sheep and Chiken  — Delivered Anywhere in the U.S.</p>
+  </header>
+
+  <main>
+    <!-- Product Cards Section -->
+    <section class="products">
+      <div class="product-card" id="milkCard">
+        <img src="C:\Users\ouihd\OneDrive\Desktop\Farm -project\images\shutterstock_371465605-4-scaled.jpg" alt="Organic Milk">
+        <h2>Organic Milk</h2>
+        <p>Creamy, hormone-free, straight from our happy cows!</p>
+        <button class="animate-btn" onclick="triggerAnimation('milkCard')">See Freshness!</button>
+      </div>
+
+      <div class="product-card" id="Butter">
+        <img src="C:\Users\ouihd\OneDrive\Desktop\Farm -project\images\traditional_dairy_fat_product.jpg" alt="Organic Butter">
+        <h2>Organic Butter</h2>
+        <p>Healthy, and full of natural goodness.</p>
+        <button class="animate-btn" onclick="triggerAnimation('ButterCard')">See Naturality!</button>
+      </div>
 
 
+      <div class="product-card" id="beefCard">
+        <img src="C:\Users\ouihd\OneDrive\Desktop\Farm -project\images\One-hoof-in-front.webp" alt="Grass-Fed Beef">
+        <h2>Grass-Fed Beef</h2>
+        <p>Tender and flavorful — raised on open pastures.</p>
+        <button class="animate-btn" onclick="triggerAnimation('beefCard')">See Quality!</button>
+      </div>
 
+      <div class="product-card" id="sheepCard">
+        <img src="C:\Users\ouihd\OneDrive\Desktop\Farm -project\images\6bae9d_295aa841f4dd4e49ad4714b08738a7a3~mv2_d_2592_1944_s_2.jpg" alt="Organic Sheep">
+        <h2>Organic Sheep</h2>
+        <p>Ethically raised, healthy, and full of natural goodness.</p>
+        <button class="animate-btn" onclick="triggerAnimation('sheepCard')">See Care!</button>
+      </div>
+
+      <div class="product-card" id="chiken">
+        <img src="C:\Users\ouihd\OneDrive\Desktop\Farm -project\images\AdobeStock_53890815-scaled.jpeg" alt="Organic Chiken">
+        <h2>Organic Chiken</h2>
+        <p>Ethically raised, healthy, and full of natural goodness.</p>
+        <button class="animate-btn" onclick="triggerAnimation('ChikenCard')">See healthy!</button>
+      </div>
+    </section>
+
+    <!-- Delivery Animation Section -->
+    <section class="delivery">
+      <h2>Nationwide Delivery</h2>
+      <p>Click the truck to start delivery animation!</p>
+      <div class="truck" id="truck" onclick="startDelivery()"></div>
+    </section>
+  </main>
+
+  <!-- 🧾 Customer Order Section -->
+<section class="order">
+  <h2>Place Your Order</h2>
+  <p>Enjoy our fresh organic milk, butter, beef, chiken and sheep products delivered nationwide!</p>
+  <!-- Direct link to the dedicated order page -->
+  <a href="order.html" class="order-btn heart-btn">
+    <span class="heart">💚</span> Order Now
+  </a>
+</section>
+
+  </main>
+
+  <footer>
+    <p>© 2025 GreenPastures Organic Farm | Delivering Health, Naturally 🌿</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
